@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Hautelook\TemplatedUriBundle\Component\Routing\Generator;
+namespace Hautelook\TemplatedUriBundle\Routing\Generator;
 
 use Symfony\Component\Routing\Route;
 use Symfony\Component\Routing\RouteCollection;

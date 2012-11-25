@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true" bootstrap="Tests/bootstrap.php">
     <testsuites>
-        <testsuite name="HautelookTemplatedUriBundle Unit Test Suite">
+        <testsuite name="HautelookTemplatedUriBundle Test Suite">
             <directory>./Tests</directory>
-            <exclude>./Tests/Functional</exclude>
         </testsuite>
     </testsuites>
 
@@ -17,5 +16,4 @@
             </exclude>
         </whitelist>
     </filter>
-
 </phpunit>

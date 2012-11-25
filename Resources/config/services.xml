@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <parameters>
-        <parameter key="hautelook.router.template.generator.class">Hautelook\TemplatedUriBundle\Component\Routing\Generator\Rfc6570Generator</parameter>
+        <parameter key="hautelook.router.template.generator.class">Hautelook\TemplatedUriBundle\Routing\Generator\Rfc6570Generator</parameter>
     </parameters>
 
     <services>
