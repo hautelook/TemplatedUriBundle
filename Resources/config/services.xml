@@ -9,7 +9,8 @@
     </parameters>
 
     <services>
-        <service id="hautelook.router.template" class="Symfony\Bundle\FrameworkBundle\Routing\Router" scope="prototype">
+        <service id="hautelook.router.template" class="Symfony\Bundle\FrameworkBundle\Routing\Router" scope="container">
+            <tag name="fsc_hateoas.url_generator" alias="templated" />
             <tag name="monolog.logger" channel="router" />
             <argument type="service" id="service_container" />
             <argument>%router.resource%</argument>
