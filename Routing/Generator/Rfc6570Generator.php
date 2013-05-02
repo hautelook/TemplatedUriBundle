@@ -40,6 +40,10 @@ class Rfc6570Generator extends UrlGenerator implements UrlGeneratorInterface, Co
      */
     protected function doGenerate($variables, $defaults, $requirements, $tokens, $parameters, $name, $referenceType, $hostTokens)
     {
+        // These are needed for encoded URLs, such as /resize/{width}x{height}/image/
+        $this->decodedChars['%7B'] = '{';
+        $this->decodedChars['%7D'] = '}';
+
         $variables = array_flip($variables);
         $mergedParams = array_replace($defaults, $this->context->getParameters(), $parameters);
 
