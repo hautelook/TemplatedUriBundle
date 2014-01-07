@@ -1,0 +1,7 @@
+route_loose:
+    pattern: /test/{foo}
+
+route_strict:
+    pattern: /test/{foo}
+    requirements:
+        foo: \d+
