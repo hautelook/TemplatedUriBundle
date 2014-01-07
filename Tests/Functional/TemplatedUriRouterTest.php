@@ -1,8 +1,6 @@
 <?php
 
-namespace Hautelook\Tests\Functional;
-
-use Hautelook\TemplatedUriBundle\Tests\Functional\TestCase;
+namespace Hautelook\TemplatedUriBundle\Tests\Functional;
 
 class TemplatedUriRouterTest extends TestCase
 {
