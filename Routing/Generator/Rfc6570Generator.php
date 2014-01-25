@@ -33,7 +33,7 @@ class Rfc6570Generator extends UrlGenerator implements UrlGeneratorInterface, Co
      * @throws InvalidParameterException           When a parameter value for a placeholder is not correct because
      *                                             it does not match the requirement
      */
-    protected function doGenerate($variables, $defaults, $requirements, $tokens, $parameters, $name, $referenceType, $hostTokens)
+    protected function doGenerate($variables, $defaults, $requirements, $tokens, $parameters, $name, $referenceType, $hostTokens, array $requiredSchemes = array())
     {
         // These are needed for encoded URLs, such as /resize/{width}x{height}/image/
         $this->decodedChars['%7B'] = '{';
