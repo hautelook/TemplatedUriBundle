@@ -11,14 +11,6 @@ matrix:
   include:
     - php: 5.3
       env: dependencies=lowest
-    - php: 5.4
-      env: dependencies=lowest
-    - php: 5.5
-      env: dependencies=lowest
-    - php: 5.6
-      env: dependencies=lowest
-    - php: hhvm
-      env: dependencies=lowest
 
 before_script:
   - composer self-update
