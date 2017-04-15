@@ -53,4 +53,19 @@ This will produce a link similar to:
 /demo?{&page}{&sort%5B%5D*}{&filter%5B%5D*}
 ```
 
+If your route has requirements on parameters, that your placeholder will violate, you will have to disable strict
+requirement checking. Example:
+
+```php
+$templatedRouter = $kernel->getContainer()->get('hautelook.router.template');
+$templatedRouter->setOption('strict_requirements', null);
+$templateLink = $templatedRouter->generate('hautelook_demo_route',
+    array(
+        'page'   => '{page}',
+        'sort'   => array('{sort}'),
+        'filter' => array('{filter}'),
+    )
+);
+```
+
 [RFC-6570]: https://tools.ietf.org/html/rfc6570

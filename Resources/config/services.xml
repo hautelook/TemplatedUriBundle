@@ -21,7 +21,7 @@
                 <argument key="generator_class">%hautelook.router.template.generator.class%</argument>
                 <argument key="generator_base_class">%hautelook.router.template.generator.class%</argument>
                 <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\PhpGeneratorDumper</argument>
-                <argument key="generator_cache_class">%kernel.name%%kernel.environment%RF6570UrlGenerator</argument>
+                <argument key="generator_cache_class">%kernel.name%%kernel.environment%RFC6570UrlGenerator</argument>
                 <argument key="matcher_class">Symfony\Bundle\FrameworkBundle\Routing\RedirectableUrlMatcher</argument>
                 <argument key="matcher_base_class">Symfony\Bundle\FrameworkBundle\Routing\RedirectableUrlMatcher</argument>
                 <argument key="matcher_dumper_class">Symfony\Component\Routing\Matcher\Dumper\PhpMatcherDumper</argument>
